@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A49FD837-8BFC-4EE8-ABE2-8B7969188508}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gym_Manegment_System</RootNamespace>
+    <AssemblyName>Gym_Manegment_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\C# Lab\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreatEccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatEccount.Designer.cs">
+      <DependentUpon>CreatEccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loding.Designer.cs">
+      <DependentUpon>Loding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffInfo.Designer.cs">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffRegi.Designer.cs">
+      <DependentUpon>StaffRegi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInfo.Designer.cs">
+      <DependentUpon>MemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberRegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberRegis.Designer.cs">
+      <DependentUpon>MemberRegis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loging.Designer.cs">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreatEccount.resx">
+      <DependentUpon>CreatEccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loding.resx">
+      <DependentUpon>Loding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffInfo.resx">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffRegi.resx">
+      <DependentUpon>StaffRegi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInfo.resx">
+      <DependentUpon>MemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberRegis.resx">
+      <DependentUpon>MemberRegis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loging.resx">
+      <DependentUpon>Loging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fitness-Gym-background-by-ojosujono96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_463508356_l0g0WS8dIe6Ccra2T45Eakuk6ZnrbYpi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_190746317_qjZikoohn97kiJrWpJZJLHilBXKVWTAD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-gym-logo-with-athletic-man-training-black-vector-20315628-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-gym-logo-with-athletic-man-training-black-vector-20315628-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rounded Square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rounded Square1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizontal Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-gym-logo-with-athletic-man-training-black-vector-20315628-removebg-preview2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Army Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-map-on-a-blue-background-vector-19999646.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphics-design-map-world-blue-background-illustration-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e232.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e233.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Installing Updates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e235.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e236.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-gym-logo-with-athletic-man-training-black-vector-20315628-removebg-preview3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-gym-logo-with-athletic-man-training-black-vector-20315628-removebg-preview4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Call1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speech Bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c35c3f98eeb38e3000ba3b50f0155e237.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Businessman.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
